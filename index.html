@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgustínCMP</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #272729; /* red BA3030 purp 282840 */
+      color: #F0D8A8; /* yellow C7C70E gris 1A1616*/
+    }
+
+    .layout {
+      display: flex;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 80px 20px;
+      gap: 60px;
+    }
+
+    .main {
+      flex: 2;
+    }
+
+    .section {
+      display: none;
+    }
+
+    .section.active {
+      display: block;
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .text {
+      font-size: 18px;
+      line-height: 1.8;
+      opacity: 0.9;
+    }
+
+    .sidebar {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 12px;
+    }
+
+    .name {
+      font-weight: bold;
+      color: #F0D8A8;
+    }
+
+    .menu a {
+      display: block;
+      color: #5757FF;
+      text-decoration: none;
+      margin-bottom: 8px;
+      opacity: 0.7;
+      cursor: pointer;
+    }
+
+    .menu a:hover {
+      opacity: 1;
+    }
+
+    @media (max-width: 800px) {
+      .layout {
+        flex-direction: column-reverse;
+      }
+
+    }
+
+    .sombra-neon {
+      color: white;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.9);  /*text-shadow(strong): 3px 3px 8px rgba(0,0,0,0.6);  text-shadow(neon): 0 0 5px cyan, 0 0 10px cyan, 0 0 20px cyan;*/
+    }
+
+    .linea {
+      border: none;
+      height: 1px;
+      background-color: #F0D8A8;
+      margin: 20px 0;
+      opacity: 0.1;
+    }
+
+    .soft {
+      font-style: italic;
+      opacity: 0.7;
+    }
+
+    .astyle:visited {
+      color: #BA3030;
+    }
+
+    .astyle:hover {
+      color: #F0D8A8;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <div class="layout">
+
+    <!-- la milanesa -->
+    <div class="main">
+
+      <div id="about" class="section active">
+        <div class="title sombra-neon" style="color: #5757FF;">HOLA!</div>
+        <div class="text">
+          <p>Aquí el amigo del gato de la imagen...</p>
+
+          𝙼𝚒 𝚑𝚒𝚜𝚝𝚘𝚛𝚒𝚊 𝚌𝚘𝚖𝚒𝚎𝚗𝚣𝚊 𝚎𝚗 𝚕𝚘𝚜 𝚊ñ𝚘𝚜 𝟿𝟶, 𝚌𝚞𝚊𝚗𝚍𝚘 𝚌𝚘𝚗 𝚞𝚗𝚊 𝚖á𝚚𝚞𝚒𝚗𝚊 𝚐𝚎𝚗é𝚛𝚒𝚌𝚊 𝚡𝟹𝟾𝟼 𝚌𝚘𝚗 𝚆𝚒𝚗𝚍𝚘𝚠𝚜 𝟹.𝟷 y 𝚖𝚜-𝙳𝙾𝚂 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛 𝚍𝚎𝚜𝚌𝚞𝚋𝚛í 𝚕𝚘 𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚊𝚋𝚊 𝚜𝚎𝚛 𝚎𝚗 𝚎𝚕 𝚏𝚞𝚝𝚞𝚛𝚘.
+𝙰𝚕 𝚏𝚒𝚗𝚊𝚕𝚒𝚣𝚊𝚛 𝚎𝚕 𝚜𝚒𝚐𝚕𝚘 𝚇𝚇 𝚘𝚋𝚝𝚞𝚟𝚎 𝚖𝚒 𝚙𝚛𝚒𝚖𝚎𝚛𝚊 𝚝𝚎𝚌𝚗𝚒𝚌𝚊𝚝𝚞𝚛𝚊. D𝚎𝚜𝚙𝚞é𝚜 𝚝𝚞𝚟𝚎 𝚕𝚊 𝚜𝚞𝚎𝚛𝚝𝚎 de 𝚝𝚛𝚊𝚋𝚊𝚓𝚊𝚛 𝚎𝚗 𝚝𝚊𝚕𝚕𝚎𝚛𝚎𝚜 𝚍𝚎 𝚎𝚕𝚎𝚌𝚝𝚛ó𝚗𝚒𝚌𝚊 𝚢 𝚌𝚘𝚖𝚙𝚞𝚝𝚊𝚌𝚒ó𝚗 𝚎𝚗 𝚐𝚎𝚗𝚎𝚛𝚊𝚕, y a𝚗𝚝𝚎𝚜 𝚚𝚞𝚎 𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚛𝚊 𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚛𝚊 𝚖𝚒𝚝𝚊𝚍 𝚍𝚎𝚕 𝟸𝟶𝟷𝟶 𝚘𝚋𝚝𝚞𝚟𝚎 𝚘𝚝𝚛𝚘 𝚝í𝚝𝚞𝚕𝚘, 𝚞𝚗𝚊 𝚝𝚎𝚌𝚗𝚒𝚌𝚊𝚝𝚞𝚛𝚊 𝚜𝚞𝚙𝚎𝚛𝚒𝚘𝚛. 𝙳𝚞𝚛𝚊𝚗𝚝𝚎 𝚖𝚒𝚜 𝚊ñ𝚘𝚜 𝚑𝚎 𝚟𝚒𝚜𝚝𝚘 𝚖𝚞𝚌𝚑𝚊 𝚙𝚛𝚘𝚐𝚛𝚊𝚖𝚊𝚌𝚒ó𝚗, 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 𝚍𝚎 𝚝𝚘𝚍𝚘 𝚝𝚒𝚙𝚘, 𝚙𝚊𝚛𝚊 𝚝𝚘𝚍𝚘 𝚝𝚒𝚙𝚘 𝚍𝚎 𝚞𝚝𝚒𝚕𝚒𝚍𝚊𝚍, 𝚖𝚎 𝚊𝚙𝚊𝚜𝚒𝚘𝚗𝚊𝚋𝚊 𝚝𝚘𝚍𝚘; 𝚕𝚘 𝚚𝚞𝚎 𝚖á𝚜 𝚖𝚎 𝚐𝚞𝚜𝚝𝚊𝚋𝚊 𝚎𝚜 𝚚𝚞𝚎 𝚗𝚘 𝚗𝚎𝚌𝚎𝚜𝚊𝚛𝚒𝚊𝚖𝚎𝚗𝚝𝚎 𝚝𝚎𝚗í𝚊𝚜 𝚚𝚞𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚊𝚛 𝚍𝚎𝚜𝚍𝚎 𝚎𝚕 𝚌ó𝚍𝚒𝚐𝚘 𝚙𝚊𝚛𝚊 𝚙𝚘𝚍𝚎𝚛 𝚜𝚎𝚛 𝚙𝚊𝚛𝚝𝚎.
+𝙴𝚕 𝚌𝚊𝚖𝚒𝚗𝚘 𝚗𝚞𝚗𝚌𝚊 𝚏𝚞𝚎 𝚏á𝚌𝚒𝚕, 𝚕𝚘𝚜 𝚝𝚛𝚊𝚋𝚊𝚓𝚘𝚜 𝚗𝚞𝚗𝚌𝚊 𝚏𝚞𝚎𝚛𝚘𝚗 𝚕𝚘𝚜 𝚒𝚍𝚎𝚊𝚕𝚎𝚜.
+𝙽𝚘 𝚜𝚒𝚎𝚖𝚙𝚛𝚎 𝚑𝚎 𝚝𝚎𝚗𝚒𝚍𝚘 𝚕𝚊 𝚜𝚞𝚎𝚛𝚝𝚎 𝚍𝚎 𝚍𝚎𝚜𝚎𝚗𝚟𝚘𝚕𝚟𝚎𝚛𝚖𝚎 𝚙𝚊𝚛𝚊 𝚕𝚘 𝚚𝚞𝚎 𝚖𝚎 𝚙𝚛𝚎𝚙𝚊𝚛é, 𝚙𝚊𝚛𝚊 𝚕𝚘 𝚚𝚞𝚎 soñé 𝚍𝚎𝚜𝚍𝚎 𝚌𝚑𝚒𝚌𝚘, 𝚙𝚎𝚛𝚘 𝚝𝚘𝚍𝚊𝚜 𝚕𝚊𝚜 𝚎𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚒𝚊𝚜 𝚖𝚎 𝚊𝚢𝚞𝚍𝚊𝚛𝚘𝚗 𝚊 𝚊𝚖𝚙𝚕𝚒𝚊𝚛 𝚖𝚒𝚜 𝚌𝚘𝚗𝚘𝚌𝚒𝚖𝚒𝚎𝚗𝚝𝚘𝚜.
+𝙼𝚎 𝚌𝚘𝚗𝚜𝚒𝚍𝚎𝚛𝚘 𝚞𝚗 𝚜𝚎𝚛 𝚒𝚗𝚝𝚞𝚒𝚝𝚒𝚟𝚘, m𝚞𝚌𝚑𝚊𝚜 𝚟𝚎𝚌𝚎𝚜 𝚍𝚎 𝚎𝚜𝚊𝚜 𝚒𝚗𝚝𝚞𝚒𝚌𝚒𝚘𝚗𝚎𝚜 𝚗𝚊𝚌𝚎𝚜 𝚒𝚍𝚎𝚊𝚜, y 𝚙𝚊𝚛𝚊 𝚚𝚞𝚎 algo 𝚎𝚡𝚒𝚜𝚝𝚊, 𝚙𝚛𝚒𝚖𝚎𝚛𝚘 𝚍𝚎𝚋𝚎 𝚜𝚎𝚛 𝚒𝚗𝚝𝚞𝚒𝚍o.
+𝚂𝚒 𝚚𝚞𝚒𝚎𝚛𝚎𝚗 𝚜𝚊𝚋𝚎𝚛 𝚍𝚎𝚝𝚊𝚕𝚕𝚎𝚜 𝚜𝚘𝚋𝚛𝚎 𝚖𝚒𝚜 𝚎𝚙𝚎𝚡𝚎𝚛𝚒𝚎𝚗𝚌𝚒𝚊𝚜 𝚕𝚊𝚋𝚘𝚛𝚊𝚕𝚎𝚜, 𝚙𝚞𝚎𝚍𝚎𝚗 𝚑𝚊𝚌𝚎𝚛𝚕𝚘<a href="#" onclick="event.preventDefault(); showSection('experience'); document.getElementById('experience').scrollIntoView({behavior:'smooth'});" style="color: #BA3030;" > aquí</a>.<br> <!-- me fui a la mier -->
+        <p style="text-align: right;"><em>Agustín M. Parra</em></p>
+        </div>
+      </div>
+
+      <div id="experience" class="section">
+        <div class="title sombra-neon" style="color: #5757FF;">Hoja de ruta</div>
+        <div class="text">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/>
+            <path d="M4 10v4c0 2.5 4 4 8 4s8-1.5 8-4v-4l-8 3-8-3z"/>
+            </svg>
+            Coursera - Prompt Engineering for ChatGPT + Generative AI {2025}
+          </h4>
+          • 𝙿𝚊𝚝𝚛𝚘𝚗𝚎𝚜 𝚍𝚎 𝚙𝚛𝚘𝚖𝚙𝚜<br>
+          • 𝙵𝚎𝚠-𝚜𝚑𝚘𝚝, 𝚌𝚑𝚊𝚒𝚗-𝚘𝚏-𝚝𝚑𝚘𝚞𝚐𝚑𝚝<br>
+          • 𝙰𝚙𝚕𝚒𝚌𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚛𝚎𝚊𝚕𝚎𝚜<br>
+          ---<br>
+          • 𝚃é𝚌𝚗𝚒𝚌𝚊𝚜 𝚖𝚘𝚍𝚎𝚛𝚗𝚊𝚜 (𝚝𝚛𝚎𝚎-𝚘𝚏-𝚝𝚑𝚘𝚞𝚐𝚑𝚝𝚜)<br>
+          • 𝚁𝙰𝙶 (𝚛𝚎𝚝𝚛𝚒𝚎𝚟𝚊𝚕 𝚊𝚞𝚐𝚖𝚎𝚗𝚝𝚎𝚍 𝚐𝚎𝚗𝚎𝚛𝚊𝚝𝚒𝚘𝚗)  
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+          <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            Sistemas Juárez y asociados {2023-2024}
+          </h4>
+          𝚃𝚎𝚜𝚝𝚎𝚛 (𝚀𝙲) 𝚎𝚗 𝚙𝚛𝚘𝚢𝚎𝚌𝚝𝚘𝚜 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚘 𝚊𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚟𝚘 𝚙𝚊𝚛𝚊 𝚒𝚗𝚜𝚝𝚒𝚝𝚞𝚌𝚒𝚘𝚗𝚎𝚜 𝚎𝚍𝚞𝚌𝚊𝚝𝚒𝚟𝚊𝚜 𝚎𝚗 𝚘𝚝𝚛𝚊𝚜 𝚙𝚛𝚘𝚟𝚒𝚗𝚌𝚒𝚊𝚜, 𝚢 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚌ó𝚍𝚒𝚐𝚘 (𝚂𝚙𝚑𝚒𝚗𝚡)    
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/>
+            <path d="M4 10v4c0 2.5 4 4 8 4s8-1.5 8-4v-4l-8 3-8-3z"/>
+            </svg>
+            IA University (e-learning) {2022}
+          </h4>
+          <span class="soft">𝙲𝚞𝚛𝚜𝚘 𝚊𝚌𝚎𝚕𝚎𝚛𝚊𝚍𝚘 𝚜𝚘𝚋𝚛𝚎 𝙸𝙰:</span><br>
+          • 𝙸𝚗𝚝𝚎𝚕𝚒𝚐𝚎𝚗𝚌𝚒𝚊 𝙰𝚛𝚝𝚒𝚏𝚒𝚌𝚒𝚊𝚕: 𝚏𝚞𝚗𝚍𝚊𝚖𝚎𝚗𝚝𝚘𝚜, 𝚊𝚙𝚕𝚒𝚌𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚢 𝚝𝚎𝚗𝚍𝚎𝚗𝚌𝚒𝚊𝚜<br>
+          • 𝙸𝚗𝚝𝚛𝚘𝚍𝚞𝚌𝚌𝚒ó𝚗 𝚊 𝙼𝚊𝚌𝚑𝚒𝚗𝚎 𝙻𝚎𝚊𝚛𝚗𝚒𝚗𝚐  
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+          <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            UTN Río Grande -TDF {2020-2021}
+          </h4>
+          𝙲𝚊𝚙𝚊𝚌𝚒𝚝𝚊𝚍𝚘𝚛 𝚑í𝚋𝚛𝚒𝚍𝚘 𝚎𝚗 𝚌𝚞𝚛𝚜𝚘𝚜 𝚍𝚎 𝙼𝚂-𝙴𝚡𝚌𝚎𝚕 𝚎 𝙸𝚗𝚝𝚛𝚘𝚍𝚞𝚌𝚌𝚒ó𝚗 𝚊 𝙿𝚢𝚝𝚑𝚘𝚗.
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            U.O.M. seccional Río Grande -TDF {2017-2019}
+          </h4>
+          • 𝚃é𝚌𝚗𝚒𝚌𝚘 𝚎𝚕𝚎𝚌𝚝𝚛ó𝚗𝚒𝚌𝚘 𝚊𝚜𝚒𝚐𝚗𝚊𝚍𝚘 𝚊𝚕 𝚛𝚎𝚕𝚎𝚟𝚊𝚖𝚒𝚎𝚗𝚝𝚘 𝚢 𝚛𝚎𝚙𝚊𝚛𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚖𝚊𝚚𝚞𝚒𝚗𝚊𝚛𝚒𝚊 𝚒𝚗𝚍𝚞𝚜𝚝𝚛𝚒𝚊𝚕<br>
+          • 𝙲𝚘-𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚘 𝚍𝚎 𝚖𝚒𝚌𝚛𝚘-𝚊𝚙𝚕𝚒𝚌𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚙𝚊𝚛𝚊 𝚐𝚎𝚜𝚝𝚒ó𝚗 𝚒𝚗𝚝𝚎𝚛𝚗𝚊
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/>
+            <path d="M4 10v4c0 2.5 4 4 8 4s8-1.5 8-4v-4l-8 3-8-3z"/>
+            </svg>
+            UTN BA {2016} 
+          </h4>
+          <span class="soft">𝙲𝚞𝚛𝚜𝚘 𝚛𝚎𝚖𝚘𝚝𝚘 𝚍𝚎 𝚌𝚘𝚗𝚌𝚎𝚙𝚝𝚘𝚜 𝚒𝚗𝚝𝚎𝚛𝚖𝚎𝚍𝚒𝚘𝚜 𝚢 𝚊𝚟𝚊𝚗𝚣𝚊𝚍𝚘𝚜 𝚍𝚎𝚗𝚝𝚛𝚘 𝚍𝚎 𝙿𝚈𝚃𝙷𝙾𝙽:</span><br>
+          • 𝙴𝚜𝚝𝚛𝚞𝚌𝚝𝚞𝚛𝚊𝚜 𝚙𝚘𝚕𝚒𝚖ó𝚛𝚏𝚒𝚌𝚊𝚜 (POO)<br>
+          • 𝙼𝚊𝚗𝚎𝚓𝚘 𝚍𝚎 𝚊𝚜𝚒𝚗𝚌𝚛𝚘𝚗𝚒𝚜𝚖𝚘<br>
+          • 𝚄𝚜𝚘 𝚊𝚟𝚊𝚗𝚣𝚊𝚍𝚘 𝚍𝚎 𝚋𝚒𝚋𝚕𝚒𝚘𝚝𝚎𝚌𝚊𝚜<br>
+          • 𝙰𝚞𝚝𝚘𝚖𝚊𝚝𝚒𝚣𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚜𝚌𝚛𝚒𝚙𝚝𝚜<br>
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            Buffa Sistemas - Universidad Nacional (Tucumán) Tecnológica {2014-2015}
+          </h4>
+          𝙲𝚊𝚙𝚊𝚌𝚒𝚝𝚊𝚍𝚘𝚛 𝚎𝚗 𝚌𝚞𝚛𝚜𝚘𝚜 𝚍𝚎 𝚒𝚗𝚏𝚘𝚛𝚖á𝚝𝚒𝚌𝚊, 𝚘𝚏𝚒𝚖á𝚝𝚒𝚌𝚊 𝚢 𝚍𝚒𝚜𝚎ñ𝚘 𝚠𝚎𝚋
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/>
+            <path d="M4 10v4c0 2.5 4 4 8 4s8-1.5 8-4v-4l-8 3-8-3z"/>
+            </svg>
+            Tecnicatura Superior en Sistemas de la Información {2010-2013}
+          </h4>
+          <span class="soft">Instituto CPSOFT - SMDT</span><br>
+          𝙰𝚗á𝚕𝚒𝚜𝚒𝚜 𝚍𝚎 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 (𝚛𝚎𝚕𝚎𝚟𝚊𝚖𝚒𝚎𝚗𝚝𝚘, 𝚍𝚒𝚜𝚎ñ𝚘 𝚕ó𝚐𝚒𝚌𝚘 𝚢 𝚍𝚒𝚊𝚐𝚛𝚊𝚖𝚊𝚌𝚒ó𝚗), 𝚋𝚊𝚜𝚎𝚜 𝚍𝚎 𝚍𝚊𝚝𝚘𝚜 (𝙼𝚢𝚂𝚀𝙻), 𝚜𝚎𝚐𝚞𝚛𝚒𝚍𝚊𝚍 𝚒𝚗𝚏𝚘𝚛𝚖á𝚝𝚒𝚌𝚊, 𝚙𝚛𝚘𝚢𝚎𝚌𝚝𝚘𝚜 𝚊𝚞𝚍𝚒𝚘𝚟𝚒𝚜𝚞𝚊𝚕𝚎𝚜 (𝚖𝚞𝚕𝚝𝚒𝚝𝚘𝚘𝚕𝚜), l𝚎𝚗𝚐𝚞𝚊𝚓𝚎𝚜 (𝙿𝙷𝙿, 𝚅𝚒𝚜𝚞𝚊𝚕, 𝚓𝚊𝚟𝚊𝚜𝚌𝚛𝚒𝚙𝚝, 𝚙𝚢𝚝𝚑𝚘𝚗), 𝚙𝚛á𝚌𝚝𝚒𝚌𝚊𝚜 𝚙𝚛𝚘𝚏𝚎𝚜𝚒𝚘𝚗𝚊𝚕𝚒𝚣𝚊𝚗𝚝𝚎𝚜.
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            Segemar Córdoba {2010-2011}
+          </h4>
+          𝚂𝚘𝚙𝚘𝚛𝚝𝚎 𝚢 𝚊𝚜𝚒𝚜𝚝𝚎𝚗𝚌𝚒𝚊 𝚝é𝚌𝚗𝚒𝚌𝚊 𝚙𝚊𝚛𝚊 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚘 𝚍𝚎 𝚌𝚊𝚛𝚝𝚘𝚐𝚛𝚊𝚏í𝚊 𝚐𝚎𝚘𝚕ó𝚐𝚒𝚌𝚊 (𝚌𝚘𝚛𝚎𝚕 𝚍𝚛𝚊𝚠-𝚊𝚞𝚝𝚘𝚌𝚊𝚍).
+𝙼𝚊𝚗𝚝𝚎𝚗𝚒𝚖𝚒𝚎𝚗𝚝𝚘 𝚍𝚎 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 𝚍𝚎 𝚐𝚎𝚜𝚝𝚒ó𝚗 𝚖𝚒𝚗𝚎𝚛𝚊.
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+          </svg>
+          Colegio Médico de Tucumán-IOFSA {2009}
+          </h4>
+          𝙳𝚊𝚝𝚊 𝚎𝚗𝚝𝚛𝚢: 𝚍𝚒𝚐𝚒𝚝𝚊𝚕𝚒𝚣𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚙𝚊𝚍𝚛𝚘𝚗𝚎𝚜, 𝚖𝚘𝚍𝚒𝚏𝚒𝚌𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚋𝚊𝚜𝚎𝚜 𝚍𝚎 𝚍𝚊𝚝𝚘𝚜, 𝚌𝚘-𝚌𝚛𝚎𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚜𝚒𝚜𝚝𝚎𝚖𝚊
+          𝚙𝚊𝚛𝚊 𝚌𝚊𝚛𝚐𝚊 𝚍𝚎 ó𝚛𝚍𝚎𝚗𝚎𝚜, 𝚙𝚎𝚍𝚒𝚍𝚘𝚜 𝚢 𝚌𝚘𝚗𝚜𝚞𝚕𝚝𝚊𝚜 𝚖é𝚍𝚒𝚌𝚊𝚜.
+          <hr class="linea">
+          <h4 style="display: flez; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            M&A Equipamientos comerciales SRL - SMDT {2005-2008}
+          </h4>
+          • 𝟸𝟶𝟶𝟻-𝟸𝟶𝟶𝟽: 𝚃é𝚌𝚗𝚒𝚌𝚘 𝚛𝚎𝚙𝚊𝚛𝚊𝚍𝚘𝚛 𝚘𝚏𝚒𝚌𝚒𝚊𝚕 𝚍𝚎 𝚋𝚊𝚕𝚊𝚗𝚣𝚊𝚜 𝚎𝚕𝚎𝚌𝚝𝚛ó𝚗𝚒𝚌𝚊𝚜 𝚂𝚢𝚜𝚝𝚎𝚕 𝚢 𝙺𝚛𝚎𝚝𝚣.<br>
+• 𝟸𝟶𝟶𝟽-𝟸𝟶𝟶𝟾: 𝚃𝚛𝚊𝚜𝚕𝚊𝚍𝚊𝚍𝚘 𝚊𝚕 𝚍𝚎𝚙𝚊𝚛𝚝𝚊𝚖𝚎𝚗𝚝𝚘 𝚍𝚎 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 𝚙𝚊𝚛𝚊 𝚊𝚛𝚖𝚊𝚍𝚘 𝚢 𝚖𝚊𝚗𝚝𝚎𝚗𝚒𝚖𝚒𝚎𝚗𝚝𝚘 𝚍𝚎 𝚛𝚎𝚍𝚎𝚜 𝚢 𝚛𝚎𝚙𝚊𝚛𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚎𝚚𝚞𝚒𝚙𝚘𝚜 𝚍𝚎𝚕 á𝚛𝚎𝚊.
+          <hr class="linea">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            Electrónica Palavecino - SMDT {2004-2006}
+          </h4>
+          𝚁𝚎𝚕𝚎𝚟𝚊𝚖𝚒𝚎𝚗𝚝𝚘 𝚢 𝚛𝚎𝚙𝚊𝚛𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚊 𝚌𝚊𝚛𝚝𝚎𝚛𝚊 𝚍𝚎 𝚌𝚕𝚒𝚎𝚗𝚝𝚎𝚜 (𝙰𝚛𝚌𝚘𝚛, 𝙲𝙲𝙲, 𝙱𝚊𝚗𝚌𝚘𝚜, 𝚌𝚕í𝚗𝚒𝚌𝚊𝚜 𝚖é𝚍𝚒𝚌𝚊𝚜, 𝙸𝚗𝚜𝚝𝚒𝚝𝚞𝚌𝚒𝚘𝚗𝚎𝚜 𝚎𝚍𝚞𝚌𝚊𝚝𝚒𝚟𝚊𝚜) 𝙿𝚊𝚛𝚝𝚎 𝚍𝚎𝚕 𝚎𝚚𝚞𝚒𝚙𝚘 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚘 𝚍𝚎 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 𝚒𝚗𝚝𝚎𝚕𝚒𝚐𝚎𝚗𝚝𝚎𝚜, 𝚖𝚎𝚍𝚒𝚍𝚘𝚛𝚎𝚜 𝚎𝚜𝚙𝚎𝚌𝚝𝚛𝚊𝚕𝚎𝚜, 𝚖𝚎𝚍𝚒𝚍𝚘𝚛𝚎𝚜 𝚍𝚎 𝚌𝚊𝚖𝚙𝚘, 𝚌𝚒𝚛𝚌𝚞𝚒𝚝𝚘𝚜 𝚒𝚖𝚙𝚛𝚎𝚜𝚘𝚜/𝚖𝚒𝚌𝚛𝚘𝚌𝚘𝚗𝚝𝚛𝚘𝚕𝚊𝚍𝚘𝚛𝚎𝚜, 𝚊𝚗𝚊𝚕𝚒𝚣𝚊𝚍𝚘𝚛𝚎𝚜 𝚍𝚎 𝚙𝚞𝚕𝚜𝚘, 𝚎𝚗𝚝𝚛𝚎 𝚘𝚝𝚛𝚘𝚜 𝚝𝚛𝚊𝚋𝚊𝚓𝚘𝚜.
+          <hr class="linea">
+          <h4 style="display:flex; align-items:center;">
+            <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
+            <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
+            <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
+            </svg>
+            Xerox Service oficial - SMDT {pasantía 2003-2003}
+          </h4>
+          𝚁𝚎𝚙𝚊𝚛𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚖𝚎𝚌á𝚗𝚒𝚌𝚊𝚜 𝚜𝚘𝚋𝚛𝚎
+          𝚖𝚘𝚍𝚎𝚕𝚘𝚜 𝚊𝚗𝚝𝚒𝚐𝚞𝚘𝚜, 𝚒𝚗𝚜𝚝𝚊𝚕𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚊 𝚛𝚎𝚍𝚎𝚜 𝚕𝚘𝚌𝚊𝚕𝚎𝚜, 𝚖𝚊𝚗𝚝𝚎𝚗𝚒𝚖𝚒𝚎𝚗𝚝𝚘 𝚎𝚗 𝚐𝚎𝚗𝚎𝚛𝚊𝚕.  
+          <hr class="linea">
+          <h4 style="display:flex; align-items:center;">
+             <!-- (icofont falló paso a usar SVGs) -->
+            <svg xmlns="http://www.w3.org/2000/svg"
+            width="16" height="16"
+            viewBox="0 0 24 24"
+            fill="#F0D8A8"
+            style="margin-right:8px;">
+            <path d="M12 2L1 7l11 5 9-4.09V17h2V7L12 2z"/>
+            <path d="M4 10v4c0 2.5 4 4 8 4s8-1.5 8-4v-4l-8 3-8-3z"/>
+            </svg>
+            Tecnicatura en informática y electrónica {1998-2003}  
+          </h4>
+          <span class="soft">Instituto Alan Turing - SMDT</span><br>
+          𝙸𝙽𝙵𝙾𝚁-> 𝙰𝚕𝚐𝚘𝚛𝚒𝚝𝚖𝚒𝚊, 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 𝚘𝚙𝚎𝚛𝚊𝚝𝚒𝚟𝚘𝚜, 𝚛𝚎𝚍𝚎𝚜, 𝚜𝚘𝚙𝚘𝚛𝚝𝚎 𝚢 𝚜𝚎𝚐𝚞𝚛𝚒𝚍𝚊𝚍, 𝚛𝚎𝚜𝚘𝚕𝚞𝚌𝚒ó𝚗 𝚍𝚎 𝚒𝚗𝚌𝚒𝚍𝚎𝚗𝚌𝚒𝚊𝚜.<br> 
+𝙴𝙻𝙴𝙲-> 𝙲𝚘𝚗𝚌𝚎𝚙𝚝𝚘𝚜 𝚋á𝚜𝚒𝚌𝚘𝚜 𝚎 𝚒𝚗𝚝𝚎𝚛𝚖𝚎𝚍𝚒𝚘𝚜, 𝚎𝚜𝚝𝚞𝚍𝚒𝚘 𝚍𝚎 𝚌𝚒𝚛𝚌𝚞𝚒𝚝𝚘𝚜 𝚎𝚕é𝚌𝚝𝚛𝚒𝚌𝚘𝚜, 𝚑𝚎𝚛𝚛𝚊𝚖𝚒𝚎𝚗𝚝𝚊𝚜 𝚍𝚎 𝚖𝚎𝚍𝚒𝚌𝚒ó𝚗, 𝚕𝚎𝚢𝚎𝚜 𝚍𝚎 𝚊𝚙𝚕𝚒𝚌𝚊𝚌𝚒ó𝚗, 𝚜𝚎𝚐𝚞𝚛𝚒𝚍𝚊𝚍 𝚎 𝚒𝚗𝚜𝚝𝚊𝚕𝚊𝚌𝚒𝚘𝚗𝚎𝚜; 𝚛𝚎𝚙𝚊𝚛𝚊𝚌𝚒ó𝚗 𝚢 𝚖𝚊𝚗𝚝𝚎𝚗𝚒𝚖𝚒𝚎𝚗𝚝𝚘 𝚊𝚗𝚊𝚕ó𝚐𝚒𝚌𝚘/𝚍𝚒𝚐𝚒𝚝𝚊𝚕.
+        </div>
+      </div>
+
+      <div id="projects" class="section">
+        <div class="title sombra-neon" style="color: #5757FF;">Github+</div>
+        <div class="text">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right: 8px;">
+            <path d="M3 5h18v12H3z"/>
+            <path d="M8 21h8v-2H8z"/>
+            </svg>
+          <a href="https://github.com/AgustinCMP?tab=repositories" target="_blank" rel="noopener noreferrer" class="astyle">𝚁𝚎𝚙𝚘𝚜𝚒𝚝𝚘𝚛𝚒𝚘𝚜</a>
+        </h4>
+        </div>
+      </div>
+
+      <div id="contact" class="section">
+        <div class="title sombra-neon" style="color: #5757FF;">Coordenadas</div>
+        <div class="text">
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right: 8px;">
+            <path d="M2 4h20v16H2z"/>
+            <path d="M2 4l10 9 10-9"/>
+            </svg>
+            𝚌𝚊𝚍𝚒𝚣.𝚊𝚝𝚒𝚗@𝚐𝚖𝚊𝚒𝚕.𝚌𝚘𝚖<br>
+          </h4>
+          <h4 style="display:flex; align-items: center;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right: 8px;">
+            <path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"/>
+            <circle cx="12" cy="9" r="2.5"/>
+            </svg>  
+            𝚈 𝚊 𝚟𝚎𝚌𝚎𝚜, 𝚎𝚗 𝚎𝚕 𝚌𝚊𝚏é 𝚖𝚊𝚜 𝚟𝚒𝚎𝚓𝚘 𝚍𝚎 𝚞𝚗𝚊 𝚌𝚒𝚞𝚍𝚊𝚍 𝚘 𝚙𝚞𝚎𝚋𝚕𝚘
+          </h4>  
+        </div>
+      </div>
+
+      <div id="thoughts" class="section">
+        <div class="title sombra-neon" style="color: #5757FF;">Reflexión</div>
+        <div class="text">
+          𝙴𝚜𝚝𝚎 𝙷𝚃𝙼𝙻, 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛, 𝚎𝚜 𝚌𝚘𝚖𝚘 <em>𝙵𝚛𝚊𝚗𝚔𝚎𝚗𝚜𝚝𝚎𝚒𝚗</em>: 𝚍𝚎𝚜𝚙𝚛𝚘𝚙𝚘𝚛𝚌𝚒𝚘𝚗𝚊𝚍𝚘, 𝚙𝚘𝚌𝚘 𝚜𝚎𝚗𝚜𝚊𝚝𝚘, 𝚎𝚗 𝚙𝚘𝚌𝚊𝚜 𝚙𝚊𝚕𝚊𝚋𝚛𝚊𝚜, 𝙷𝙾𝚁𝚁𝙸𝙱𝙻𝙴!<br>
+          𝙿𝚎𝚛𝚘 𝚎𝚜 𝚖𝚒 𝚌𝚛𝚎𝚊𝚌𝚒ó𝚗.<br>
+          𝙰𝚗𝚝𝚎𝚜 𝚍𝚎 𝚛𝚎𝚐𝚒𝚜𝚝𝚛𝚊𝚛𝚖𝚎 𝚎𝚗 𝙶𝚒𝚝𝚑𝚞𝚋, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚎𝚜𝚝𝚎 𝚊ñ𝚘, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎𝚕 𝚘𝚝𝚛𝚘 𝚊ñ𝚘 pasado, 𝚢 𝚚𝚞𝚒𝚣á 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚖𝚞𝚌𝚑𝚘 𝚖á𝚜; 𝚑𝚊𝚋í𝚊 𝚙𝚎𝚗𝚜𝚊𝚍𝚘 𝚎𝚗 𝚞𝚗 𝚊𝚋𝚘𝚞𝚝 𝚠𝚎𝚋𝚜𝚒𝚝𝚎/𝚛𝚘𝚊𝚍𝚖𝚊𝚙 𝚙𝚛𝚘𝚏𝚎𝚜𝚒𝚘𝚗𝚊𝚕, 𝚒𝚗𝚌𝚕𝚞𝚜𝚘 𝚎𝚗 𝚞𝚗 𝚙𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚌𝚘𝚖𝚙𝚕𝚎𝚓𝚘, 𝚙𝚎𝚛𝚘 𝚜𝚒𝚎𝚖𝚙𝚛𝚎
+          𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚋𝚊 𝚙𝚎𝚗𝚜𝚊𝚗𝚍𝚘 <em>𝚙𝚊𝚛𝚊 𝚚𝚞é?</em><br>
+          𝙿𝚎𝚛𝚘 𝚕𝚘 𝚚𝚞𝚎 𝚜𝚒 𝚏𝚞𝚎, 𝚎𝚜 𝚚𝚞𝚎 𝚗𝚞𝚗𝚌𝚊 𝚍𝚎𝚓é 𝚍𝚎 𝚎𝚡𝚙𝚎𝚛𝚒𝚖𝚎𝚗𝚝𝚊𝚛, 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚊𝚛 𝚢 𝚊𝚙𝚛𝚎𝚗𝚍𝚎𝚛 𝚎𝚗 𝚎𝚕 𝚙𝚛𝚘𝚌𝚎𝚜𝚘 𝚍𝚎 𝚒𝚛 𝚑𝚊𝚌𝚒𝚎𝚗𝚍𝚘
+          𝚊𝚕𝚐𝚘 𝚚𝚞𝚎 𝚊 𝚙𝚎𝚜𝚊𝚛 𝚍𝚎 𝚌𝚞𝚎𝚜𝚝𝚒𝚘𝚗𝚊𝚛𝚕𝚘, 𝚖𝚎 𝚜𝚎𝚛𝚟í𝚊 𝚙𝚊𝚛𝚊 𝚖𝚊𝚗𝚝𝚎𝚗𝚎𝚛𝚖𝚎 𝚎𝚗 𝚏𝚘𝚛𝚖𝚊 𝚌𝚘𝚗 𝚎𝚕 𝚍𝚒𝚜𝚎ñ𝚘 𝚠𝚎𝚋.<br>
+          𝙷𝚘𝚢 𝚕𝚘 𝚙𝚞𝚋𝚕𝚒𝚌𝚘 𝚌𝚘𝚖𝚘 𝚞𝚗𝚊 𝚖𝚊𝚗𝚎𝚛𝚊 𝚍𝚎 𝚍𝚎𝚌𝚒𝚛: <em>𝚎𝚜𝚝𝚊 𝚎𝚜 una 𝚙𝚛𝚞𝚎𝚋𝚊 más, 𝚍𝚎 𝚚𝚞𝚎 𝚜𝚒𝚎𝚖𝚙𝚛𝚎 𝚕𝚘 𝚒𝚗𝚝𝚎𝚗𝚝é</em><br>
+          <br>
+          {Esta creación no esta excenta de ser hurgada nuevamente}
+
+        </div>
+      </div>
+
+    </div>
+
+    <!-- el embutido -->
+    <div class="sidebar">
+      <img src="img/bruneli.png" class="profile-img">
+      <div class="name">La pantufla de Agustín<br><div style="color: #BA3030;">(y Bruno)</div></br></div>
+
+      <div class="menu">
+        <a onclick="showSection('about')">About</a>
+        <a onclick="showSection('experience')">Experiencia</a>
+        <a onclick="showSection('projects')">Diseños(works)</a>
+        <a onclick="showSection('contact')">mIRC(contact)</a>
+        <a onclick="showSection('thoughts')">Desprendimientos</a>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- el único bloque de Js que pude hacer (después de casi un mes) -->
+  <script>
+    function showSection(id) {
+      document.querySelectorAll('.section')
+      //const sections = document.querySelectorAll('.section');
+      .forEach(sec => sec.classList.remove('active'));
+      //sections.forEach(sec => sec.classList.remove('active'));
+
+      document.getElementById(id).classList.add('active');
+
+      location.hash = id;
+    }
+      window.addEventListener('hashchange', () => {
+    showSection(location.hash.substring(1) || 'about');
+    });
+
+    // carga inicial
+    showSection(location.hash.substring(1) || 'about');  
+    //la única manera de solucionar "<--BF FF-->" sin crear mas pages en un solo HTML, es con un "listener"
+  </script>
+<!-- esto empezó con menos de 100 líneas... LRPM! -->
+</body>
+</html>
