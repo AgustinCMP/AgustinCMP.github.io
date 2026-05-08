@@ -137,8 +137,8 @@
       text-decoration: none;
       font-size: 24px;
 
-      opacity: 1;
-      /*pointer-events: none;*/
+      opacity: 0;
+      pointer-events: none;
 
       transition: 0.3s;
     }
@@ -415,24 +415,24 @@
 
     const boton = document.getElementById("subir");
 
-    window.addEventListener("scroll", () => {
+    window.onscroll = function () {
 
-    if (window.scrollY > 200) {
-    boton.classList.add("mostrar");
+    if (document.documentElement.scrollTop > 200) {
+        boton.classList.add("mostrar");
     } else {
-    boton.classList.remove("mostrar");
+        boton.classList.remove("mostrar");
     }
 
-    });
+    };
 
-    boton.addEventListener("click", () => {
+    boton.onclick = function () {
 
     window.scrollTo({
-    top: 0,
-    behavior: "smooth"
+        top: 0,
+        behavior: "smooth"
     });
 
-    });  
+    };
   </script>
 <!-- esto empezó con menos de 100 líneas... mi deux! -->
 <a href="javascript:void(0)" id="subir" class="subir">↑</a> 
