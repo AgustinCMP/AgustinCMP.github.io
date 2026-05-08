@@ -113,6 +113,46 @@
       color: #F0D8A8;
     }
 
+    html {
+      scroll-behavior: smooth;
+    }
+
+    #subir {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+
+      width: 50px;
+      height: 50px;
+
+      background: #6c63ff;
+      color: white;
+
+      border-radius: 50%;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      text-decoration: none;
+      font-size: 24px;
+
+      opacity: 0;
+      pointer-events: none;
+
+      transition: 0.3s;
+    }
+
+    #subir.mostrar {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    #subir:hover {
+      transform: scale(1.1);
+    }
+
+
   </style>
 </head>
 
@@ -128,8 +168,8 @@
         <div class="text">
           <p>Aquí el amigo del gato de la imagen...</p>
 
-          𝙼𝚒 𝚑𝚒𝚜𝚝𝚘𝚛𝚒𝚊 𝚌𝚘𝚖𝚒𝚎𝚗𝚣𝚊 𝚎𝚗 𝚕𝚘𝚜 𝚊ñ𝚘𝚜 𝟿𝟶, 𝚌𝚞𝚊𝚗𝚍𝚘 𝚌𝚘𝚗 𝚞𝚗𝚊 𝚖á𝚚𝚞𝚒𝚗𝚊 𝚐𝚎𝚗é𝚛𝚒𝚌𝚊 𝚡𝟹𝟾𝟼 𝚌𝚘𝚗 𝚆𝚒𝚗𝚍𝚘𝚠𝚜 𝟹.𝟷 y 𝚖𝚜-𝙳𝙾𝚂 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛 𝚍𝚎𝚜𝚌𝚞𝚋𝚛í 𝚕𝚘 𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚊𝚋𝚊 𝚜𝚎𝚛 𝚎𝚗 𝚎𝚕 𝚏𝚞𝚝𝚞𝚛𝚘.
-𝙰𝚕 𝚏𝚒𝚗𝚊𝚕𝚒𝚣𝚊𝚛 𝚎𝚕 𝚜𝚒𝚐𝚕𝚘 𝚇𝚇 𝚘𝚋𝚝𝚞𝚟𝚎 𝚖𝚒 𝚙𝚛𝚒𝚖𝚎𝚛𝚊 𝚝𝚎𝚌𝚗𝚒𝚌𝚊𝚝𝚞𝚛𝚊. D𝚎𝚜𝚙𝚞é𝚜 𝚝𝚞𝚟𝚎 𝚕𝚊 𝚜𝚞𝚎𝚛𝚝𝚎 de 𝚝𝚛𝚊𝚋𝚊𝚓𝚊𝚛 𝚎𝚗 𝚝𝚊𝚕𝚕𝚎𝚛𝚎𝚜 𝚍𝚎 𝚎𝚕𝚎𝚌𝚝𝚛ó𝚗𝚒𝚌𝚊 𝚢 𝚌𝚘𝚖𝚙𝚞𝚝𝚊𝚌𝚒ó𝚗 𝚎𝚗 𝚐𝚎𝚗𝚎𝚛𝚊𝚕, y a𝚗𝚝𝚎𝚜 𝚚𝚞𝚎 𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚛𝚊 𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚛𝚊 𝚖𝚒𝚝𝚊𝚍 𝚍𝚎𝚕 𝟸𝟶𝟷𝟶 𝚘𝚋𝚝𝚞𝚟𝚎 𝚘𝚝𝚛𝚘 𝚝í𝚝𝚞𝚕𝚘, 𝚞𝚗𝚊 𝚝𝚎𝚌𝚗𝚒𝚌𝚊𝚝𝚞𝚛𝚊 𝚜𝚞𝚙𝚎𝚛𝚒𝚘𝚛. 𝙳𝚞𝚛𝚊𝚗𝚝𝚎 𝚖𝚒𝚜 𝚊ñ𝚘𝚜 𝚑𝚎 𝚟𝚒𝚜𝚝𝚘 𝚖𝚞𝚌𝚑𝚊 𝚙𝚛𝚘𝚐𝚛𝚊𝚖𝚊𝚌𝚒ó𝚗, 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 𝚍𝚎 𝚝𝚘𝚍𝚘 𝚝𝚒𝚙𝚘, 𝚙𝚊𝚛𝚊 𝚝𝚘𝚍𝚘 𝚝𝚒𝚙𝚘 𝚍𝚎 𝚞𝚝𝚒𝚕𝚒𝚍𝚊𝚍, 𝚖𝚎 𝚊𝚙𝚊𝚜𝚒𝚘𝚗𝚊𝚋𝚊 𝚝𝚘𝚍𝚘; 𝚕𝚘 𝚚𝚞𝚎 𝚖á𝚜 𝚖𝚎 𝚐𝚞𝚜𝚝𝚊𝚋𝚊 𝚎𝚜 𝚚𝚞𝚎 𝚗𝚘 𝚗𝚎𝚌𝚎𝚜𝚊𝚛𝚒𝚊𝚖𝚎𝚗𝚝𝚎 𝚝𝚎𝚗í𝚊𝚜 𝚚𝚞𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚊𝚛 𝚍𝚎𝚜𝚍𝚎 𝚎𝚕 𝚌ó𝚍𝚒𝚐𝚘 𝚙𝚊𝚛𝚊 𝚙𝚘𝚍𝚎𝚛 𝚜𝚎𝚛 𝚙𝚊𝚛𝚝𝚎.
+          𝙼𝚒 𝚑𝚒𝚜𝚝𝚘𝚛𝚒𝚊 𝚌𝚘𝚖𝚒𝚎𝚗𝚣𝚊 𝚎𝚗 𝚕𝚘𝚜 𝚊ñ𝚘𝚜 𝟿𝟶, 𝚌𝚞𝚊𝚗𝚍𝚘 𝚌𝚘𝚗 𝚞𝚗 ordenador 𝚐𝚎𝚗é𝚛𝚒𝚌o 𝚡𝟹𝟾𝟼 𝚌𝚘𝚗 𝚆𝚒𝚗𝚍𝚘𝚠𝚜 𝟹.𝟷 y 𝚖𝚜-𝙳𝙾𝚂 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛, 𝚍𝚎𝚜𝚌𝚞𝚋𝚛í 𝚕𝚘 𝚚𝚞𝚎 𝚍𝚎𝚜𝚎𝚊𝚋𝚊 hacer 𝚎𝚗 𝚎𝚕 𝚏𝚞𝚝𝚞𝚛𝚘.
+𝙰𝚕 𝚏𝚒𝚗𝚊𝚕𝚒𝚣𝚊𝚛 𝚎𝚕 𝚜𝚒𝚐𝚕𝚘 𝚇𝚇 𝚘𝚋𝚝𝚞𝚟𝚎 𝚖𝚒 𝚙𝚛𝚒𝚖𝚎𝚛𝚊 𝚝𝚎𝚌𝚗𝚒𝚌𝚊𝚝𝚞𝚛𝚊. D𝚎𝚜𝚙𝚞é𝚜 𝚝𝚞𝚟𝚎 𝚕𝚊 𝚜𝚞𝚎𝚛𝚝𝚎 de 𝚝𝚛𝚊𝚋𝚊𝚓𝚊𝚛 𝚎𝚗 𝚝𝚊𝚕𝚕𝚎𝚛𝚎𝚜 𝚍𝚎 𝚎𝚕𝚎𝚌𝚝𝚛ó𝚗𝚒𝚌𝚊 𝚢 𝚌𝚘𝚖𝚙𝚞𝚝𝚊𝚌𝚒ó𝚗 𝚎𝚗 𝚐𝚎𝚗𝚎𝚛𝚊𝚕, y a𝚗𝚝𝚎𝚜 𝚚𝚞𝚎 𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚛𝚊 𝚕𝚊 𝚙𝚛𝚒𝚖𝚎𝚛𝚊 𝚖𝚒𝚝𝚊𝚍 𝚍𝚎𝚕 𝟸𝟶𝟷𝟶, 𝚘𝚋𝚝𝚞𝚟𝚎 𝚘𝚝𝚛𝚘 𝚝í𝚝𝚞𝚕𝚘, 𝚞𝚗𝚊 𝚝𝚎𝚌𝚗𝚒𝚌𝚊𝚝𝚞𝚛𝚊 𝚜𝚞𝚙𝚎𝚛𝚒𝚘𝚛. 𝙳𝚞𝚛𝚊𝚗𝚝𝚎 𝚖𝚒𝚜 𝚊ñ𝚘𝚜 𝚑𝚎 𝚟𝚒𝚜𝚝𝚘 𝚖𝚞𝚌𝚑𝚊 𝚙𝚛𝚘𝚐𝚛𝚊𝚖𝚊𝚌𝚒ó𝚗, 𝚜𝚒𝚜𝚝𝚎𝚖𝚊𝚜 𝚍𝚎 𝚝𝚘𝚍𝚘 𝚝𝚒𝚙𝚘, 𝚙𝚊𝚛𝚊 𝚝𝚘𝚍𝚘 𝚝𝚒𝚙𝚘 𝚍𝚎 𝚞𝚝𝚒𝚕𝚒𝚍𝚊𝚍, 𝚖𝚎 𝚊𝚙𝚊𝚜𝚒𝚘𝚗𝚊𝚋𝚊 𝚝𝚘𝚍𝚘; 𝚕𝚘 𝚚𝚞𝚎 𝚖á𝚜 𝚖𝚎 𝚐𝚞𝚜𝚝𝚊𝚋𝚊 𝚎𝚜 𝚚𝚞𝚎 𝚗𝚘 𝚗𝚎𝚌𝚎𝚜𝚊𝚛𝚒𝚊𝚖𝚎𝚗𝚝𝚎 𝚝𝚎𝚗í𝚊𝚜 𝚚𝚞𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚊𝚛 𝚍𝚎𝚜𝚍𝚎 𝚎𝚕 𝚌ó𝚍𝚒𝚐𝚘 𝚙𝚊𝚛𝚊 𝚙𝚘𝚍𝚎𝚛 𝚜𝚎𝚛 𝚙𝚊𝚛𝚝𝚎 de este fascinante ecosistema.
 𝙴𝚕 𝚌𝚊𝚖𝚒𝚗𝚘 𝚗𝚞𝚗𝚌𝚊 𝚏𝚞𝚎 𝚏á𝚌𝚒𝚕, 𝚕𝚘𝚜 𝚝𝚛𝚊𝚋𝚊𝚓𝚘𝚜 𝚗𝚞𝚗𝚌𝚊 𝚏𝚞𝚎𝚛𝚘𝚗 𝚕𝚘𝚜 𝚒𝚍𝚎𝚊𝚕𝚎𝚜.
 𝙽𝚘 𝚜𝚒𝚎𝚖𝚙𝚛𝚎 𝚑𝚎 𝚝𝚎𝚗𝚒𝚍𝚘 𝚕𝚊 𝚜𝚞𝚎𝚛𝚝𝚎 𝚍𝚎 𝚍𝚎𝚜𝚎𝚗𝚟𝚘𝚕𝚟𝚎𝚛𝚖𝚎 𝚙𝚊𝚛𝚊 𝚕𝚘 𝚚𝚞𝚎 𝚖𝚎 𝚙𝚛𝚎𝚙𝚊𝚛é, 𝚙𝚊𝚛𝚊 𝚕𝚘 𝚚𝚞𝚎 soñé 𝚍𝚎𝚜𝚍𝚎 𝚌𝚑𝚒𝚌𝚘, 𝚙𝚎𝚛𝚘 𝚝𝚘𝚍𝚊𝚜 𝚕𝚊𝚜 𝚎𝚡𝚙𝚎𝚛𝚒𝚎𝚗𝚌𝚒𝚊𝚜 𝚖𝚎 𝚊𝚢𝚞𝚍𝚊𝚛𝚘𝚗 𝚊 𝚊𝚖𝚙𝚕𝚒𝚊𝚛 𝚖𝚒𝚜 𝚌𝚘𝚗𝚘𝚌𝚒𝚖𝚒𝚎𝚗𝚝𝚘𝚜.
 𝙼𝚎 𝚌𝚘𝚗𝚜𝚒𝚍𝚎𝚛𝚘 𝚞𝚗 𝚜𝚎𝚛 𝚒𝚗𝚝𝚞𝚒𝚝𝚒𝚟𝚘, m𝚞𝚌𝚑𝚊𝚜 𝚟𝚎𝚌𝚎𝚜 𝚍𝚎 𝚎𝚜𝚊𝚜 𝚒𝚗𝚝𝚞𝚒𝚌𝚒𝚘𝚗𝚎𝚜 𝚗𝚊𝚌𝚎𝚜 𝚒𝚍𝚎𝚊𝚜, y 𝚙𝚊𝚛𝚊 𝚚𝚞𝚎 algo 𝚎𝚡𝚒𝚜𝚝𝚊, 𝚙𝚛𝚒𝚖𝚎𝚛𝚘 𝚍𝚎𝚋𝚎 𝚜𝚎𝚛 𝚒𝚗𝚝𝚞𝚒𝚍o.
@@ -162,7 +202,7 @@
             </svg>
             Sistemas Juárez y asociados {2023-2024}
           </h4>
-          𝚃𝚎𝚜𝚝𝚎𝚛 (𝚀𝙲) 𝚎𝚗 𝚙𝚛𝚘𝚢𝚎𝚌𝚝𝚘𝚜 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚘 𝚊𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚟𝚘 𝚙𝚊𝚛𝚊 𝚒𝚗𝚜𝚝𝚒𝚝𝚞𝚌𝚒𝚘𝚗𝚎𝚜 𝚎𝚍𝚞𝚌𝚊𝚝𝚒𝚟𝚊𝚜 𝚎𝚗 𝚘𝚝𝚛𝚊𝚜 𝚙𝚛𝚘𝚟𝚒𝚗𝚌𝚒𝚊𝚜, 𝚢 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝𝚊𝚌𝚒ó𝚗 𝚍𝚎 𝚌ó𝚍𝚒𝚐𝚘 (𝚂𝚙𝚑𝚒𝚗𝚡)    
+          𝚃𝚎𝚜𝚝𝚎𝚛 (𝚀𝙲) 𝚎𝚗 𝚙𝚛𝚘𝚢𝚎𝚌𝚝𝚘𝚜 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚘 𝚊𝚙𝚕𝚒𝚌𝚊𝚝𝚒𝚟𝚘 𝚙𝚊𝚛𝚊 𝚒𝚗𝚜𝚝𝚒𝚝𝚞𝚌𝚒𝚘𝚗𝚎𝚜 𝚎𝚍𝚞𝚌𝚊𝚝𝚒𝚟𝚊𝚜 𝚎𝚗 𝚘𝚝𝚛𝚊𝚜 𝚙𝚛𝚘𝚟𝚒𝚗𝚌𝚒𝚊𝚜, 𝚢 𝚍𝚘𝚌𝚞𝚖𝚎𝚗𝚝𝚊𝚌𝚒ó𝚗 (utlizando sphinx y github) sobre y para aplicaciones de automatización (python).    
           <hr class="linea">
           <h4 style="display:flex; align-items: center;">
             <svg viewBox="0 0 24 24" fill="#F0D8A8" width="18" height="18" style="margin-right:8px;">
@@ -270,7 +310,7 @@
             <path d="M21.7 19.3l-6.4-6.4a5 5 0 01-6.6-6.6l2.2 2.2 2.1-2.1-2.2-2.2a5 5 0 016.6 6.6l6.4 6.4-2.1 2.1z"/>
             <path d="M2.3 21.7l7.8-7.8 1.4 1.4-7.8 7.8-1.4-1.4zM14.5 3l6.5 6.5-1.8 1.8-6.5-6.5L14.5 3z"/>
             </svg>
-            Xerox Service oficial - SMDT {pasantía 2003-2003}
+            Xerox Service oficial - SMDT {pasantía 2003}
           </h4>
           𝚁𝚎𝚙𝚊𝚛𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚖𝚎𝚌á𝚗𝚒𝚌𝚊𝚜 𝚜𝚘𝚋𝚛𝚎
           𝚖𝚘𝚍𝚎𝚕𝚘𝚜 𝚊𝚗𝚝𝚒𝚐𝚞𝚘𝚜, 𝚒𝚗𝚜𝚝𝚊𝚕𝚊𝚌𝚒𝚘𝚗𝚎𝚜 𝚊 𝚛𝚎𝚍𝚎𝚜 𝚕𝚘𝚌𝚊𝚕𝚎𝚜, 𝚖𝚊𝚗𝚝𝚎𝚗𝚒𝚖𝚒𝚎𝚗𝚝𝚘 𝚎𝚗 𝚐𝚎𝚗𝚎𝚛𝚊𝚕.  
@@ -316,28 +356,21 @@
             </svg>
             𝚌𝚊𝚍𝚒𝚣.𝚊𝚝𝚒𝚗@𝚐𝚖𝚊𝚒𝚕.𝚌𝚘𝚖<br>
           </h4>
-          <h4 style="display:flex; align-items: center;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right: 8px;">
-            <path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7z"/>
-            <circle cx="12" cy="9" r="2.5"/>
-            </svg>  
-            𝚈 𝚊 𝚟𝚎𝚌𝚎𝚜, 𝚎𝚗 𝚎𝚕 𝚌𝚊𝚏é 𝚖𝚊𝚜 𝚟𝚒𝚎𝚓𝚘 𝚍𝚎 𝚞𝚗𝚊 𝚌𝚒𝚞𝚍𝚊𝚍 𝚘 𝚙𝚞𝚎𝚋𝚕𝚘
-          </h4>  
         </div>
       </div>
 
       <div id="thoughts" class="section">
         <div class="title sombra-neon" style="color: #5757FF;">Reflexión</div>
         <div class="text">
-          𝙴𝚜𝚝𝚎 𝙷𝚃𝙼𝙻, 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛, 𝚎𝚜 𝚌𝚘𝚖𝚘 <em>𝙵𝚛𝚊𝚗𝚔𝚎𝚗𝚜𝚝𝚎𝚒𝚗</em>: 𝚍𝚎𝚜𝚙𝚛𝚘𝚙𝚘𝚛𝚌𝚒𝚘𝚗𝚊𝚍𝚘, 𝚙𝚘𝚌𝚘 𝚜𝚎𝚗𝚜𝚊𝚝𝚘, 𝚎𝚗 𝚙𝚘𝚌𝚊𝚜 𝚙𝚊𝚕𝚊𝚋𝚛𝚊𝚜, 𝙷𝙾𝚁𝚁𝙸𝙱𝙻𝙴!<br>
-          𝙿𝚎𝚛𝚘 𝚎𝚜 𝚖𝚒 𝚌𝚛𝚎𝚊𝚌𝚒ó𝚗.<br>
-          𝙰𝚗𝚝𝚎𝚜 𝚍𝚎 𝚛𝚎𝚐𝚒𝚜𝚝𝚛𝚊𝚛𝚖𝚎 𝚎𝚗 𝙶𝚒𝚝𝚑𝚞𝚋, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚎𝚜𝚝𝚎 𝚊ñ𝚘, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎𝚕 𝚘𝚝𝚛𝚘 𝚊ñ𝚘 pasado, 𝚢 𝚚𝚞𝚒𝚣á 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚖𝚞𝚌𝚑𝚘 𝚖á𝚜; 𝚑𝚊𝚋í𝚊 𝚙𝚎𝚗𝚜𝚊𝚍𝚘 𝚎𝚗 𝚞𝚗 𝚊𝚋𝚘𝚞𝚝 𝚠𝚎𝚋𝚜𝚒𝚝𝚎/𝚛𝚘𝚊𝚍𝚖𝚊𝚙 𝚙𝚛𝚘𝚏𝚎𝚜𝚒𝚘𝚗𝚊𝚕, 𝚒𝚗𝚌𝚕𝚞𝚜𝚘 𝚎𝚗 𝚞𝚗 𝚙𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚌𝚘𝚖𝚙𝚕𝚎𝚓𝚘, 𝚙𝚎𝚛𝚘 𝚜𝚒𝚎𝚖𝚙𝚛𝚎
+          𝙴𝚜𝚝𝚎 𝙷𝚃𝙼𝙻, 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛, 𝚎𝚜 𝚌𝚘𝚖𝚘 <em>𝙵𝚛𝚊𝚗𝚔𝚎𝚗𝚜𝚝𝚎𝚒𝚗</em>: 𝚍𝚎𝚜𝚙𝚛𝚘𝚙𝚘𝚛𝚌𝚒𝚘𝚗𝚊𝚍𝚘, 𝚙𝚘𝚌𝚘 𝚜𝚎𝚗𝚜𝚊𝚝𝚘, 𝚎𝚗 𝚙𝚘𝚌𝚊𝚜 𝚙𝚊𝚕𝚊𝚋𝚛𝚊𝚜, MONSTRUOSO!<br>
+          𝙰𝚗𝚝𝚎𝚜 𝚍𝚎 𝚛𝚎𝚐𝚒𝚜𝚝𝚛𝚊𝚛𝚖𝚎 𝚎𝚗 𝙶𝚒𝚝𝚑𝚞𝚋, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚎𝚜𝚝𝚎 𝚊ñ𝚘, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎𝚕 𝚘𝚝𝚛𝚘 𝚊ñ𝚘 pasado, 𝚢 𝚚𝚞𝚒𝚣á 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚖𝚞𝚌𝚑𝚘 𝚖á𝚜, 𝚑𝚊𝚋í𝚊 𝚙𝚎𝚗𝚜𝚊𝚍𝚘 𝚎𝚗 𝚞𝚗 𝚊𝚋𝚘𝚞𝚝 𝚠𝚎𝚋𝚜𝚒𝚝𝚎/𝚛𝚘𝚊𝚍𝚖𝚊𝚙 𝚙𝚛𝚘𝚏𝚎𝚜𝚒𝚘𝚗𝚊𝚕, digamos, 𝚞𝚗 𝚙𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚌𝚘𝚖𝚙𝚕𝚎𝚓𝚘; 𝚙𝚎𝚛𝚘 𝚜𝚒𝚎𝚖𝚙𝚛𝚎
           𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚋𝚊 𝚙𝚎𝚗𝚜𝚊𝚗𝚍𝚘 <em>𝚙𝚊𝚛𝚊 𝚚𝚞é?</em><br>
-          𝙿𝚎𝚛𝚘 𝚕𝚘 𝚚𝚞𝚎 𝚜𝚒 𝚏𝚞𝚎, 𝚎𝚜 𝚚𝚞𝚎 𝚗𝚞𝚗𝚌𝚊 𝚍𝚎𝚓é 𝚍𝚎 𝚎𝚡𝚙𝚎𝚛𝚒𝚖𝚎𝚗𝚝𝚊𝚛, 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚊𝚛 𝚢 𝚊𝚙𝚛𝚎𝚗𝚍𝚎𝚛 𝚎𝚗 𝚎𝚕 𝚙𝚛𝚘𝚌𝚎𝚜𝚘 𝚍𝚎 𝚒𝚛 𝚑𝚊𝚌𝚒𝚎𝚗𝚍𝚘
+          L𝚘 𝚚𝚞𝚎 𝚜𝚒 pasó, 𝚎𝚜 𝚚𝚞𝚎 𝚗𝚞𝚗𝚌𝚊 𝚍𝚎𝚓é 𝚍𝚎 𝚎𝚡𝚙𝚎𝚛𝚒𝚖𝚎𝚗𝚝𝚊𝚛, 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚊𝚛 𝚢 𝚊𝚙𝚛𝚎𝚗𝚍𝚎𝚛 𝚎𝚗 𝚎𝚕 𝚙𝚛𝚘𝚌𝚎𝚜𝚘 𝚍𝚎 𝚒𝚛 𝚑𝚊𝚌𝚒𝚎𝚗𝚍𝚘
           𝚊𝚕𝚐𝚘 𝚚𝚞𝚎 𝚊 𝚙𝚎𝚜𝚊𝚛 𝚍𝚎 𝚌𝚞𝚎𝚜𝚝𝚒𝚘𝚗𝚊𝚛𝚕𝚘, 𝚖𝚎 𝚜𝚎𝚛𝚟í𝚊 𝚙𝚊𝚛𝚊 𝚖𝚊𝚗𝚝𝚎𝚗𝚎𝚛𝚖𝚎 𝚎𝚗 𝚏𝚘𝚛𝚖𝚊 𝚌𝚘𝚗 𝚎𝚕 𝚍𝚒𝚜𝚎ñ𝚘 𝚠𝚎𝚋.<br>
           𝙷𝚘𝚢 𝚕𝚘 𝚙𝚞𝚋𝚕𝚒𝚌𝚘 𝚌𝚘𝚖𝚘 𝚞𝚗𝚊 𝚖𝚊𝚗𝚎𝚛𝚊 𝚍𝚎 𝚍𝚎𝚌𝚒𝚛: <em>𝚎𝚜𝚝𝚊 𝚎𝚜 una 𝚙𝚛𝚞𝚎𝚋𝚊 más, 𝚍𝚎 𝚚𝚞𝚎 𝚜𝚒𝚎𝚖𝚙𝚛𝚎 𝚕𝚘 𝚒𝚗𝚝𝚎𝚗𝚝é</em><br>
           <br>
-          {Esta creación no esta excenta de ser hurgada nuevamente}
+          {Esta creación no esta excenta de ser hurgada nuevamente<br>
+          No tiene nada de modularidad, lo pensé así, un socotroco unificado}
 
         </div>
       </div>
@@ -354,7 +387,7 @@
         <a onclick="showSection('experience')">Experiencia</a>
         <a onclick="showSection('projects')">Diseños(works)</a>
         <a onclick="showSection('contact')">mIRC(contact)</a>
-        <a onclick="showSection('thoughts')">Desprendimientos</a>
+        <a onclick="showSection('thoughts')">Disparates</a>
       </div>
     </div>
 
@@ -380,6 +413,7 @@
     showSection(location.hash.substring(1) || 'about');  
     //la única manera de solucionar "<--BF FF-->" sin crear mas pages en un solo HTML, es con un "listener"
   </script>
-<!-- esto empezó con menos de 100 líneas... LRPM! -->
+<!-- esto empezó con menos de 100 líneas... mi deux! -->
+<a href="#" class="subir">↑</a>  
 </body>
 </html>
