@@ -113,46 +113,6 @@
       color: #F0D8A8;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
-    .subir {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-
-      width: 50px;
-      height: 50px;
-
-      background: #F0D8A8;
-      color: white;
-
-      border-radius: 50%;
-
-      display: flex;
-      align-items: center;
-      justify-content: center;
-
-      text-decoration: none;
-      font-size: 24px;
-
-      opacity: 0;
-      pointer-events: none;
-
-      transition: 0.3s;
-    }
-
-    .subir.mostrar {
-      opacity: 1;
-      pointer-events: auto;
-    }
-
-    .subir:hover {
-      transform: scale(1.1);
-    }
-
-
   </style>
 </head>
 
@@ -376,7 +336,6 @@
       </div>
 
     </div>
-
     <!-- el embutido -->
     <div class="sidebar">
       <img src="bruneli.png" class="profile-img">
@@ -392,14 +351,11 @@
     </div>
 
   </div>
-
-  <!-- el único bloque de Js que pude hacer (después de casi un mes) -->
+  <!-- el único bloque de Js que pude hacer funcionar (después de casi no se cuánto tiempo) -->
   <script>
     function showSection(id) {
       document.querySelectorAll('.section')
-      //const sections = document.querySelectorAll('.section');
       .forEach(sec => sec.classList.remove('active'));
-      //sections.forEach(sec => sec.classList.remove('active'));
 
       document.getElementById(id).classList.add('active');
 
@@ -408,33 +364,12 @@
       window.addEventListener('hashchange', () => {
     showSection(location.hash.substring(1) || 'about');
     });
-
+    
     // carga inicial
     showSection(location.hash.substring(1) || 'about');  
     //la única manera de solucionar "<--BF FF-->" sin crear mas pages en un solo HTML, es con un "listener"
 
-    const boton = document.getElementById("subir");
-
-    window.onscroll = function () {
-
-    if (document.documentElement.scrollTop > 200) {
-        boton.classList.add("mostrar");
-    } else {
-        boton.classList.remove("mostrar");
-    }
-
-    };
-
-    boton.onclick = function () {
-
-    window.scrollTo({
-        top: 0,
-        behavior: "smooth"
-    });
-
-    };
   </script>
-<!-- esto empezó con menos de 100 líneas... mi deux! -->
-<a href="javascript:void(0)" id="subir" class="subir">↑</a> 
+<!-- esto empezó con menos de 100 líneas...  --> 
 </body>
 </html>
