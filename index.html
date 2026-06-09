@@ -113,10 +113,17 @@
       color: #F0D8A8;
     }
 
+    body.dark {
+      background: #121212;
+      color: white;
+    }
+
   </style>
 </head>
 
 <body>
+
+  <button onclick="toggleTheme()">🌗​Mode</button>
 
   <div class="layout">
 
@@ -322,15 +329,12 @@
       <div id="thoughts" class="section">
         <div class="title sombra-neon" style="color: #5757FF;">Reflexión</div>
         <div class="text">
-          𝙴𝚜𝚝𝚎 𝙷𝚃𝙼𝙻, 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛, 𝚎𝚜 𝚌𝚘𝚖𝚘 <em>𝙵𝚛𝚊𝚗𝚔𝚎𝚗𝚜𝚝𝚎𝚒𝚗</em>: 𝚍𝚎𝚜𝚙𝚛𝚘𝚙𝚘𝚛𝚌𝚒𝚘𝚗𝚊𝚍𝚘, 𝚙𝚘𝚌𝚘 𝚜𝚎𝚗𝚜𝚊𝚝𝚘, 𝚎𝚗 𝚙𝚘𝚌𝚊𝚜 𝚙𝚊𝚕𝚊𝚋𝚛𝚊𝚜, MONSTRUOSO!<br>
-          𝙰𝚗𝚝𝚎𝚜 𝚍𝚎 𝚛𝚎𝚐𝚒𝚜𝚝𝚛𝚊𝚛𝚖𝚎 𝚎𝚗 𝙶𝚒𝚝𝚑𝚞𝚋, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚎𝚜𝚝𝚎 𝚊ñ𝚘, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎𝚕 𝚘𝚝𝚛𝚘 𝚊ñ𝚘 pasado, 𝚢 𝚚𝚞𝚒𝚣á 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚖𝚞𝚌𝚑𝚘 𝚖á𝚜, 𝚑𝚊𝚋í𝚊 𝚙𝚎𝚗𝚜𝚊𝚍𝚘 𝚎𝚗 𝚞𝚗 𝚊𝚋𝚘𝚞𝚝 𝚠𝚎𝚋𝚜𝚒𝚝𝚎/𝚛𝚘𝚊𝚍𝚖𝚊𝚙 𝚙𝚛𝚘𝚏𝚎𝚜𝚒𝚘𝚗𝚊𝚕, digamos, 𝚞𝚗 𝚙𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘 𝚌𝚘𝚖𝚙𝚕𝚎𝚓𝚘; 𝚙𝚎𝚛𝚘 𝚜𝚒𝚎𝚖𝚙𝚛𝚎
-          𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚋𝚊 𝚙𝚎𝚗𝚜𝚊𝚗𝚍𝚘 <em>𝚙𝚊𝚛𝚊 𝚚𝚞é?</em><br>
+          𝙴𝚜𝚝𝚎 𝙷𝚃𝙼𝙻, 𝚎𝚗 𝚜𝚞 𝚒𝚗𝚝𝚎𝚛𝚒𝚘𝚛, 𝚎𝚜 𝚌𝚘𝚖𝚘 <em>𝙵𝚛𝚊𝚗𝚔𝚎𝚗𝚜𝚝𝚎𝚒𝚗</em>: 𝚍𝚎𝚜𝚙𝚛𝚘𝚙𝚘𝚛𝚌𝚒𝚘𝚗𝚊𝚍𝚘, 𝚜𝚒𝚗 𝚖𝚘𝚍𝚞𝚕𝚊𝚛𝚒𝚍𝚊𝚍, 𝚎𝚗 𝚙𝚘𝚌𝚊𝚜 𝚙𝚊𝚕𝚊𝚋𝚛𝚊𝚜, ¡MONSTRUOSO!<br>
+          𝙰𝚗𝚝𝚎𝚜 𝚍𝚎 𝚛𝚎𝚐𝚒𝚜𝚝𝚛𝚊𝚛𝚖𝚎 𝚎𝚗 𝙶𝚒𝚝H𝚞𝚋, 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚎𝚜𝚝𝚎 𝚊ñ𝚘, 𝚢 𝚚𝚞𝚒𝚣á 𝚊𝚗𝚝𝚎𝚜 𝚍𝚎 𝚖𝚞𝚌𝚑𝚘 𝚖á𝚜, 𝚑𝚊𝚋í𝚊 𝚙𝚎𝚗𝚜𝚊𝚍𝚘 𝚎𝚗 𝚞𝚗 𝚊𝚋𝚘𝚞𝚝 𝚠𝚎𝚋𝚜𝚒𝚝𝚎/𝚛𝚘𝚊𝚍𝚖𝚊𝚙 𝚙𝚛𝚘𝚏𝚎𝚜𝚒𝚘𝚗𝚊𝚕, digamos, 𝚞𝚗 𝚙𝚘𝚛𝚝𝚏𝚘𝚕𝚒𝚘; 𝚙𝚎𝚛𝚘 𝚜𝚒𝚎𝚖𝚙𝚛𝚎
+          𝚝𝚎𝚛𝚖𝚒𝚗𝚊𝚋𝚊 𝚙𝚎𝚗𝚜𝚊𝚗𝚍𝚘 <em>¿𝚙𝚊𝚛𝚊 𝚚𝚞é?</em><br>
           L𝚘 𝚚𝚞𝚎 𝚜𝚒 pasó, 𝚎𝚜 𝚚𝚞𝚎 𝚗𝚞𝚗𝚌𝚊 𝚍𝚎𝚓é 𝚍𝚎 𝚎𝚡𝚙𝚎𝚛𝚒𝚖𝚎𝚗𝚝𝚊𝚛, 𝚍𝚎 𝚍𝚎𝚜𝚊𝚛𝚛𝚘𝚕𝚕𝚊𝚛 𝚢 𝚊𝚙𝚛𝚎𝚗𝚍𝚎𝚛 𝚎𝚗 𝚎𝚕 𝚙𝚛𝚘𝚌𝚎𝚜𝚘 𝚍𝚎 𝚒𝚛 𝚑𝚊𝚌𝚒𝚎𝚗𝚍𝚘
           𝚊𝚕𝚐𝚘 𝚚𝚞𝚎 𝚊 𝚙𝚎𝚜𝚊𝚛 𝚍𝚎 𝚌𝚞𝚎𝚜𝚝𝚒𝚘𝚗𝚊𝚛𝚕𝚘, 𝚖𝚎 𝚜𝚎𝚛𝚟í𝚊 𝚙𝚊𝚛𝚊 𝚖𝚊𝚗𝚝𝚎𝚗𝚎𝚛𝚖𝚎 𝚎𝚗 𝚏𝚘𝚛𝚖𝚊 𝚌𝚘𝚗 𝚎𝚕 𝚍𝚒𝚜𝚎ñ𝚘 𝚠𝚎𝚋.<br>
-          𝙷𝚘𝚢 𝚕𝚘 𝚙𝚞𝚋𝚕𝚒𝚌𝚘 𝚌𝚘𝚖𝚘 𝚞𝚗𝚊 𝚖𝚊𝚗𝚎𝚛𝚊 𝚍𝚎 𝚍𝚎𝚌𝚒𝚛: <em>𝚎𝚜𝚝𝚊 𝚎𝚜 una 𝚙𝚛𝚞𝚎𝚋𝚊 más, 𝚍𝚎 𝚚𝚞𝚎 𝚜𝚒𝚎𝚖𝚙𝚛𝚎 𝚕𝚘 𝚒𝚗𝚝𝚎𝚗𝚝é</em><br>
-          <br>
-          {Esta creación no esta excenta de ser hurgada nuevamente<br>
-          No tiene nada de modularidad, lo pensé así, un socotroco unificado}
+          {Frankiplantilla sujeta a constantes modificaciones}<br>
 
         </div>
       </div>
@@ -368,6 +372,10 @@
     // carga inicial
     showSection(location.hash.substring(1) || 'about');  
     //la única manera de solucionar "<--BF FF-->" sin crear mas pages en un solo HTML, es con un "listener"
+
+    function toggleTheme() {
+      document.body.classList.toggle("dark");
+    }
 
   </script>
 <!-- esto empezó con menos de 100 líneas...  --> 
